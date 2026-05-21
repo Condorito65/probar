@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background: #000;
+      color: white;
+      padding: 12px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contáctame</h1>
+
+  <form action="https://formspree.io/f/xabc1234"
+        method="POST">
+
+    <input
+      type="text"
+      name="nombre"
+      placeholder="Tu nombre"
+      required
+    >
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Tu correo"
+      required
+    >
+
+    <textarea
+      name="mensaje"
+      rows="6"
+      placeholder="Tu mensaje"
+      required
+    ></textarea>
+
+    <button type="submit">
+      Enviar mensaje
+    </button>
+
+  </form>
+
+</body>
+</html>
